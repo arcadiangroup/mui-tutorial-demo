@@ -12,7 +12,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "chalk": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

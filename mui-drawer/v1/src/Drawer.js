@@ -15,16 +15,17 @@ import withRoot from "./withRoot";
 import { Route } from "react-router-dom";
 import AppDrawer from "./modules/components/AppDrawer";
 
-import Tooltip from '@material-ui/core/Tooltip';
-import GithubIcon from '@material-ui/docs/svgIcons/GitHub';
+import Tooltip from "@material-ui/core/Tooltip";
+import GithubIcon from "@material-ui/docs/svgIcons/GitHub";
 
 const styles = theme => ({
   root: {
+    flexGrow: 1,
     textAlign: "center",
     paddingTop: theme.spacing.unit * 20
   },
-  githubButton: {
-    marginLeft: '80%'
+  flex: {
+    flex: 1
   }
 });
 
@@ -132,13 +133,12 @@ class Index extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const title = "Hola from the Drawer";
-    let appBarClassName = classes.appBar;
+    const title = "Material-UI Drawer using Create React App";
     let navIconClassName = "";
 
     return (
       <div className={classes.root}>
-        <AppBar className={appBarClassName}>
+        <AppBar>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -148,16 +148,13 @@ class Index extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-            {title !== null && (
-              <Typography
-                className={classes.title}
-                type="title"
-                color="inherit"
-                noWrap
-              >
-                {title}
-              </Typography>
-            )}
+            <Typography
+              variant="title"
+              color="inherit"
+              className={classes.flex}
+            >
+              {title}
+            </Typography>
             <Tooltip title="GitHub repository" enterDelay={300}>
               <IconButton
                 className={classes.githubButton}
