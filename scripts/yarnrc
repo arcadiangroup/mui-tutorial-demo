@@ -1,0 +1,8 @@
+
+
+# Be sure and set the .yarnrc file in this directory to
+# match the ROOT variable below...
+
+ROOT=/tmp14
+
+cp .yarnrc $ROOT/mui-tutorial-demo/ghw-augosuggest
