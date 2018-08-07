@@ -1,0 +1,38 @@
+#!/bin/bash
+
+ROOT=/tmp14
+
+echo 'ghw-autosuggest'
+echo ''
+cd $ROOT/mui-tutorial-demo/ghw-autosuggest/v1
+yarn
+
+echo 'ghw-drawer'
+echo ''
+cd $ROOT/mui-tutorial-demo/ghw-drawer/v1
+yarn
+
+echo 'ghw-menu'
+echo ''
+cd $ROOT/mui-tutorial-demo/ghw-menu/v1
+yarn
+
+echo 'mui-doc'
+echo ''
+cd $ROOT/mui-tutorial-demo/mui-doc/v1
+yarn
+
+echo 'mui-drawer'
+echo ''
+cd $ROOT/mui-tutorial-demo/mui-drawer/v1
+yarn
+
+echo 'mui-md'
+echo ''
+cd $ROOT/mui-tutorial-demo/mui-md/v1
+yarn
+
+echo 'mui-menu'
+echo ''
+cd $ROOT/mui-tutorial-demo/mui-menu/v1
+yarn
