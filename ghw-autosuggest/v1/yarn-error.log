@@ -1,0 +1,60 @@
+Arguments: 
+  /mianode/node/bin/node /mianode/node/bin/yarn version
+
+PATH: 
+  /Users/ma/.rvm/gems/ruby-2.2.3/bin:/Users/ma/.rvm/gems/ruby-2.2.3@global/bin:/Users/ma/.rvm/rubies/ruby-2.2.3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/Users/ma/.pyenv/shims:/Users/ma/.rvm/bin:/mia/protoc/bin:/miahugo:/mia/redis/src:/mianode/node/bin:/mia/golang/go/bin:/mia/golang/bin:/tmp56/meteor:/tmp60/bin:/mia/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/ma/.rvm/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/mianode/node/lib/node_modules/yarn/lib/cli.js:126002:13)
+      at emitNone (events.js:106:13)
+      at Interface.emit (events.js:208:7)
+      at Interface._ttyWrite (readline.js:775:16)
+      at ReadStream.onkeypress (readline.js:160:10)
+      at emitTwo (events.js:126:13)
+      at ReadStream.emit (events.js:214:7)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1011:36)
+
+npm manifest: 
+  {
+    "name": "ghw-autosuggest",
+    "private": true,
+    "description": "Standalone Autosuggest with Material-UI",
+    "version": "0.0.1",
+    "license": "MIT",
+    "dependencies": {
+      "react-dom": "latest",
+      "react": "latest",
+      "prop-types": "latest",
+      "@material-ui/core": "^1.4.3",
+      "@material-ui/icons": "^2.0.1",
+      "react-autosuggest": "9.3.4",
+      "autosuggest-highlight": "3.1.1"
+    },
+    "devDependencies": {
+      "react-scripts": "1.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

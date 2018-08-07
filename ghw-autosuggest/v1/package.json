@@ -1,0 +1,25 @@
+{
+  "name": "ghw-autosuggest",
+  "private": true,
+  "description": "Standalone Autosuggest with Material-UI",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "react-dom": "latest",
+    "react": "latest",
+    "prop-types": "latest",
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.1",
+    "react-autosuggest": "9.3.4",
+    "autosuggest-highlight": "3.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
