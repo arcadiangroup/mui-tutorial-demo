@@ -134,7 +134,6 @@ class Index extends React.Component {
   render() {
     const { classes } = this.props;
     const title = "Material-UI Drawer using Create React App";
-    let navIconClassName = "";
 
     return (
       <div className={classes.root}>
@@ -144,7 +143,6 @@ class Index extends React.Component {
               color="inherit"
               aria-label="open drawer"
               onClick={this.handleDrawerOpen}
-              className={navIconClassName}
             >
               <MenuIcon />
             </IconButton>
