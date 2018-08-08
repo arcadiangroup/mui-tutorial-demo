@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, withRouter } from "react-router-dom";
 
-import Nav from "./pages/Drawer";
+import Nav from "./containers/Drawer";
 
 const MyNav = withRouter(Nav);
 
