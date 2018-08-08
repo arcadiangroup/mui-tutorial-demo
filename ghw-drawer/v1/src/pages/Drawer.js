@@ -21,11 +21,12 @@ import GithubIcon from '@material-ui/docs/svgIcons/GitHub';
 
 const styles = theme => ({
   root: {
+    flexGrow: 1,
     textAlign: "center",
     paddingTop: theme.spacing.unit * 20
   },
-  githubButton: {
-    marginLeft: '80%'
+  flex: {
+    flex: 1
   }
 });
 
@@ -109,7 +110,7 @@ function findActivePage(currentPages, url) {
   return activePage;
 }
 
-class Index extends React.Component {
+class Drawer extends React.Component {
   state = {
     mobileOpen: false
   };
@@ -135,32 +136,26 @@ class Index extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const title = "Github Worlds";
-    let appBarClassName = classes.appBar;
-    let navIconClassName = "";
+    const title = "Github Worlds this is going to be a long title";
 
     return (
       <div className={classes.root}>
-        <AppBar className={appBarClassName}>
+        <AppBar>
           <Toolbar>
             <IconButton
               color="inherit"
               aria-label="open drawer"
               onClick={this.handleDrawerOpen}
-              className={navIconClassName}
             >
               <MenuIcon />
             </IconButton>
-            {title !== null && (
               <Typography
-                className={classes.title}
-                type="title"
+                variant="title"
                 color="inherit"
-                noWrap
+                className={classes.flex}
               >
                 {title}
               </Typography>
-            )}
 
             <Tooltip title="GitHub repository" enterDelay={300}>
               <IconButton
@@ -200,14 +195,14 @@ class Index extends React.Component {
   }
 }
 
-Index.propTypes = {
+Drawer.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-Index.childContextTypes = {
+Drawer.childContextTypes = {
   url: PropTypes.object,
   pages: PropTypes.array,
   activePage: PropTypes.object
 };
 
-export default withRoot(withStyles(styles)(Index));
+export default withRoot(withStyles(styles)(Drawer));
