@@ -20,6 +20,9 @@ import Home from "../components/Home";
 import Admin from "./Admin";
 import ShowTheLocation from "./../components/ShowTheLocation";
 
+import Tooltip from "@material-ui/core/Tooltip";
+import GithubIcon from "@material-ui/docs/svgIcons/GitHub";
+
 const styles = {
   root: {
     flexGrow: 1
@@ -164,6 +167,17 @@ class MenuAppBar extends React.Component {
                 </MenuItem>
               </Menu>
             </div>
+            <Tooltip title="GitHub repository" enterDelay={300}>
+              <IconButton
+                className={classes.githubButton}
+                component="a"
+                color="inherit"
+                href="https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu"
+                aria-label="GitHub repository"
+              >
+                <GithubIcon />
+              </IconButton>
+            </Tooltip>
           </Toolbar>
         </AppBar>
 
