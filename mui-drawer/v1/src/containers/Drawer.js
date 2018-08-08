@@ -10,13 +10,18 @@ import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 
 import find from "lodash/find";
-import withRoot from "./withRoot";
+import withRoot from "../withRoot";
 
 import { Route } from "react-router-dom";
-import AppDrawer from "./modules/components/AppDrawer";
+import AppDrawer from "../modules/components/AppDrawer";
 
 import Tooltip from "@material-ui/core/Tooltip";
 import GithubIcon from "@material-ui/docs/svgIcons/GitHub";
+
+import MarkdownViewWrapper from "./MarkdownViewWrapper"
+
+const markdownurl =
+  "https://raw.githubusercontent.com/stormasm/mui-tutorial-demo/master/mui-drawer/Readme.md";
 
 const styles = theme => ({
   root: {
@@ -107,7 +112,7 @@ const ShowChapterSection = ({ match }) => (
   </div>
 );
 
-class Index extends React.Component {
+class Drawer extends React.Component {
   state = {
     mobileOpen: false
   };
@@ -185,19 +190,22 @@ class Index extends React.Component {
         <div style={{ flex: 1, padding: "10px" }}>
           <Route path="/:ch/:sec" component={ShowChapterSection} />
         </div>
+
+        <MarkdownViewWrapper view={markdownurl} />
+
       </div>
     );
   }
 }
 
-Index.propTypes = {
+Drawer.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-Index.childContextTypes = {
+Drawer.childContextTypes = {
   url: PropTypes.object,
   pages: PropTypes.array,
   activePage: PropTypes.object
 };
 
-export default withRoot(withStyles(styles)(Index));
+export default withRoot(withStyles(styles)(Drawer));
