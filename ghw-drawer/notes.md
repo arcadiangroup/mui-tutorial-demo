@@ -1,4 +1,28 @@
 
+To get up and running
+
+```
+cd d2
+yarn [or] npm install
+npm start
+```
+
+**August 02, 2018**
+
+**d2** is the latest version of code that should be run...
+
+d2 matches up with
+[v1.4.0](https://github.com/mui-org/material-ui/releases/tag/v1.4.0)
+
+This code is finished for awhile, in the future as Material-UI
+evolves I will periodically update this code with the latest
+versions of the essential files documented below.
+
+I will leave the older versions
+in place in their respective directories along with the
+associated Readme files for folks are not on the latest
+version of Material-UI.
+
 June 6, 2018
 
 This is the final version of code with the drawer and 3 views...
