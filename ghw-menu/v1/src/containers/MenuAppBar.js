@@ -7,7 +7,6 @@ import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import IconButton from "@material-ui/core/IconButton";
-import AccountCircle from "@material-ui/icons/AccountCircle";
 
 import { Route } from "react-router";
 import { Link } from "react-router-dom";
@@ -17,7 +16,6 @@ import compose from "recompose/compose";
 
 import withRoot from "./../withRoot";
 import Home from "../components/Home";
-import Admin from "./Admin";
 import ShowTheLocation from "./../components/ShowTheLocation";
 
 import Tooltip from '@material-ui/core/Tooltip';
@@ -45,8 +43,7 @@ const styles = {
 
 class MenuAppBar extends React.Component {
   state = {
-    anchorEl1: null,
-    anchorEl2: null
+    anchorEl1: null
   };
 
   handleMenu = event => {
@@ -57,17 +54,9 @@ class MenuAppBar extends React.Component {
     this.setState({ anchorEl1: null });
   };
 
-  handleMenuAdmin = event => {
-    this.setState({ anchorEl2: event.currentTarget });
-  };
-
-  handleCloseAdmin = () => {
-    this.setState({ anchorEl2: null });
-  };
-
   render() {
     const { classes, selectedKey } = this.props;
-    const { anchorEl1, anchorEl2 } = this.state;
+    const { anchorEl1 } = this.state;
 
     return (
       <div className={classes.root}>
@@ -145,39 +134,6 @@ class MenuAppBar extends React.Component {
               </Menu>
             </div>
 
-            <div>
-              <IconButton
-                className={classes.menuButton2}
-                aria-owns={anchorEl2 ? "menu-appbar2" : null}
-                aria-haspopup="true"
-                onClick={this.handleMenuAdmin}
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-              <Menu
-                id="menu-appbar2"
-                anchorEl={anchorEl2}
-                open={Boolean(anchorEl2)}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                onClose={this.handleCloseAdmin}
-              >
-                <MenuItem onClick={this.handleCloseAdmin}>
-                  <Link className={classes.link} to="/admin">
-                    Admin
-                  </Link>
-                </MenuItem>
-              </Menu>
-            </div>
-
-
             <Tooltip title="GitHub repository" enterDelay={300}>
               <IconButton
                 component="a"
@@ -189,14 +145,11 @@ class MenuAppBar extends React.Component {
               </IconButton>
             </Tooltip>
 
-
-
           </Toolbar>
         </AppBar>
 
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/admin" component={Admin} />
 
           <Route path={`/${selectedKey}/view1`} component={ShowTheLocation} />
           <Route path={`/${selectedKey}/view2`} component={ShowTheLocation} />
