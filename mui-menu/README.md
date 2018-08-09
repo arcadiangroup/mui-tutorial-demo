@@ -1,8 +1,6 @@
 
 ## mui-menu
 
-#### Introduction
-
 This demo displays a simple example of how to use Material-UI
 [menus](https://material-ui.com/demos/menus/) in concert with
 [react-router](https://github.com/ReactTraining/react-router)
