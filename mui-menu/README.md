@@ -1,6 +1,4 @@
 
-### mui-menu
-
 ## Introduction
 
 This demo displays a simple example of how to use Material-UI
