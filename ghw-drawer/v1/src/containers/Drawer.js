@@ -141,7 +141,7 @@ class Drawer extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const title = "Github Worlds this is going to be a long title";
+    const title = "Github Worlds";
 
     return (
       <div className={classes.root}>
