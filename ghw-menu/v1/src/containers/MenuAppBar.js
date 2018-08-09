@@ -82,6 +82,7 @@ class MenuAppBar extends React.Component {
             </Typography>
             <div>
               <Typography
+                variant="body2"
                 className={classes.menuButton1}
                 aria-owns={anchorEl1 ? "menu-appbar1" : null}
                 aria-haspopup="true"
