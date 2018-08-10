@@ -40,7 +40,7 @@ route changes by
 ### React Router Redux
 
 * [react-router-redux](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/README.md)
-[legacy react-router-redux](https://github.com/reactjs/react-router-redux)
+* [legacy react-router-redux](https://github.com/reactjs/react-router-redux)
 
 This project has been deprecated and currently there is not a good well
 known solution to keep the History API and the Redux state in sync so
