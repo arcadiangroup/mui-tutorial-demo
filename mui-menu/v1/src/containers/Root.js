@@ -6,11 +6,11 @@ import { withRouter } from "react-router-dom";
 
 import ConnectedRouter from "./../rrr/ConnectedRouter";
 import configureStore from "../configureStore";
-import AppChapter from "./AppChapter";
+import MenuAppBar from "./MenuAppBar";
 
 const history = createHistory();
 const store = configureStore(history);
-const Router = withRouter(AppChapter);
+const Router = withRouter(MenuAppBar);
 
 export default class Root extends Component {
   render() {
