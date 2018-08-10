@@ -4,6 +4,21 @@ import { connect } from "react-redux";
 import { selectKey, addKey } from "../actions";
 import Picker from "../components/Picker";
 
+import compose from "recompose/compose";
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+import withRoot from "./../withRoot";
+
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+  input: {
+    display: 'none',
+  },
+});
+
 class KeyboxContainer extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +31,7 @@ class KeyboxContainer extends Component {
   }
 
   render() {
-    const { keys, selectedKey, addKey } = this.props;
+    const { classes, keys, selectedKey, addKey } = this.props;
 
     let input;
     return (
@@ -38,7 +53,13 @@ class KeyboxContainer extends Component {
             }}
           >
             <input ref={node => (input = node)} />
-            <button type="submit">Add Key</button>
+
+            <Button type="submit" variant="contained" color="primary" className={classes.button}>
+              Add Chapter
+            </Button>
+
+            <button type="submit">Add Chapter</button>
+
           </form>
         </div>
       </div>
@@ -59,4 +80,14 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, { addKey, selectKey })(KeyboxContainer);
+// If you don't have any styles you can do it this way !
+// export default connect(mapStateToProps, { addKey, selectKey })(KeyboxContainer);
+
+const part = compose(
+  withStyles(styles, {
+    name: "KeyboxContainer"
+  }),
+  connect(mapStateToProps, {addKey, selectKey})
+)(KeyboxContainer);
+
+export default withRoot(part);
