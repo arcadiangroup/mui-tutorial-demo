@@ -78,7 +78,7 @@ class MenuAppBar extends React.Component {
               color="inherit"
               className={classes.flex}
             >
-              Title
+              Menus with Dynamic Routes
             </Typography>
             <div>
               <Typography
