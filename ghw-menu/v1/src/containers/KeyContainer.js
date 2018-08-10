@@ -11,14 +11,14 @@ class KeyContainer extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(chapter) {
+  handleChange(inputKey) {
     const { router, push, selectKey } = this.props;
 
-    selectKey(chapter);
+    selectKey(inputKey);
 
     const pathname = router.location.pathname;
     const section = pathname.split("/");
-    const urlpath = "/" + chapter + "/" + section[2];
+    const urlpath = "/" + inputKey + "/" + section[2];
     push(urlpath);
   }
 
