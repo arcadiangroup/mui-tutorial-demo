@@ -48,7 +48,10 @@ I have forked the above repo and placed it inside this demo
 and
 [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
 
-Talk about
-[react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
+### Future work
 
-Talk about the Admin functionality, adding keys, how it all works...
+Eventually we will persist the new routes or chapters to
+[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) 
+and add in another button to clear out the localStorage and reset the redux state machine.
+
+But for now each application refresh in the browser resets the redux state machine.
