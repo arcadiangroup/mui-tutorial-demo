@@ -13,14 +13,14 @@ This demo displays the same concept as
 
 ### The concept
 
-Each menu item is listed as a section in a book and the chapters in
-the book are at the higher level and can be changed at any time
-with a drop down menu leaving the sections the same.  You will see
-when you get into **Github Worlds** that the menu items are the views
-instead of the sections and the chapters are actually the Github
-repository you wish to view.  The drop down menu enables one to look at
-the same view for different Github repositories and the same is
-true for the Chapter / Section analogy inside a book.
+When you read a text book in school the author breaks all of the information into higher levels called chapters and then within those chapters are more fine grained knowledge called sections.  This demo simulates that concept by building a framework to enable electronic navigation of information broken down into chapters and sections.  You can navigate around using the chapter menu drop down in the upper left hand corner of the screen and then within those chapters individual sections which are the menu items.  Play around with the demo to see how it works.
+
+The only thing that is displayed on the screen is your location.  But that is enough to show that the navigation is working.  It is up to the developer to expand this concept if they so choose by adding in more information to your E-book.
+
+#### Precursor to Github Worlds
+
+You will see when you get into **Github Worlds** that the menu items are the views instead of the sections and the chapters are actually the Github
+repository you wish to view.
 
 Talk about
 [react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
