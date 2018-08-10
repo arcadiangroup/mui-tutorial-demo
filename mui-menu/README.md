@@ -34,7 +34,8 @@ The
 [KeyContainer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-menu/v1/src/containers/KeyContainer.js) is responsible for handling
 route changes by
 
-* changing the redux state via the Picker
+* changing the redux state via the
+[Picker](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-menu/v1/src/components/Picker.js)
 * and pushing the new route onto the [History API](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
 
 By doing this the new route URL will show up in the address bar.
