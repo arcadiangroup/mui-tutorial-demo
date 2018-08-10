@@ -39,15 +39,15 @@ route changes by
 
 ### React Router Redux
 
-* https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/README.md
-* https://github.com/reactjs/react-router-redux
+* [react-router-redux](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/README.md)
+[legacy react-router-redux](https://github.com/reactjs/react-router-redux)
 
 This project has been deprecated and currently there is not a good well
 known solution to keep the History API and the Redux state in sync so
 I have forked the above repo and placed it inside this demo
 and
 [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
-
+this mui-tutorial-demo that use this functionality.
 
 Talk about
 [react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
