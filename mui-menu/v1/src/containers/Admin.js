@@ -17,7 +17,13 @@ export default class Admin extends Component {
           <Typography gutterBottom component="p">
             <a href={"https://reacttraining.com/react-router/web/api/Route"} target="_blank">React Router Route</a>
           </Typography>
-
+          <p></p>
+          <Typography component="p">
+            After adding a couple of new chapters use the dropdown to switch chapters
+          </Typography>
+          <Typography component="p">
+            then go to the Sections menu to see the new routes become active.
+          </Typography>
 
 
       </div>
