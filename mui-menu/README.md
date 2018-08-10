@@ -35,7 +35,7 @@ The
 route changes by
 
 * changing the redux state via the Picker
-* and pushing the new route onto the History API
+* and pushing the new route onto the [History API](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
 
 ### React Router Redux
 
