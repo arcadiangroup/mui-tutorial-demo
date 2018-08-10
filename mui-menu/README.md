@@ -37,6 +37,8 @@ route changes by
 * changing the redux state via the Picker
 * and pushing the new route onto the [History API](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md)
 
+By doing this the new route URL will show up in the address bar.
+
 ### React Router Redux
 
 * [react-router-redux](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/README.md)
@@ -51,7 +53,7 @@ and
 ### Future work
 
 Eventually we will persist the new routes or chapters to
-[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) 
+[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 and add in another button to clear out the localStorage and reset the redux state machine.
 
 But for now each application refresh in the browser resets the redux state machine.
