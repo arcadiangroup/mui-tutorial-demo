@@ -24,7 +24,17 @@ export default class Admin extends Component {
           <Typography component="p">
             then go to the Sections menu to see the new routes become active.
           </Typography>
-
+          <p></p>
+          <Typography component="p">
+            Eventually we will persist the new routes or chapters to localStorage and add in
+          </Typography>
+          <Typography component="p">
+            another button to clear out the localStorage and reset the redux state machine.
+          </Typography>
+          <p></p>
+          <Typography component="p">
+            But for now each application refresh in the browser resets the redux state machine.
+          </Typography>
 
       </div>
     );

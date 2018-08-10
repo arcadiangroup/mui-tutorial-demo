@@ -47,7 +47,6 @@ known solution to keep the History API and the Redux state in sync so
 I have forked the above repo and placed it inside this demo
 and
 [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
-this mui-tutorial-demo that use this functionality.
 
 Talk about
 [react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
