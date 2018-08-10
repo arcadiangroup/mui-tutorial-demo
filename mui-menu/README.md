@@ -22,6 +22,33 @@ The only thing that is displayed on the screen is your location.  But that is en
 You will see when you get into **Github Worlds** that the menu items are the views instead of the sections and the chapters are actually the Github
 repository you wish to view.
 
+### Adding Dynamic Routes
+
+Inside this demo is a proof of concept for how to add dynamic routes
+to your application.  In this demo, the core route which is a **chapter**
+is the first part of the URL and the **section** is the second part of the URL.  The combination of these two items is what drives the react router to its final destination.  Having the ability to dynamically modify the routes by adding in chapters is accomplished via the **Admin** icon which is between the Section menu and the Github Icon.
+
+#### Keeping things in Sync
+
+The
+[KeyContainer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-menu/v1/src/containers/KeyContainer.js) is responsible for handling
+route changes by
+
+* changing the redux state via the Picker
+* and pushing the new route onto the History API
+
+### React Router Redux
+
+* https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux/README.md
+* https://github.com/reactjs/react-router-redux
+
+This project has been deprecated and currently there is not a good well
+known solution to keep the History API and the Redux state in sync so
+I have forked the above repo and placed it inside this demo
+and
+[ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
+
+
 Talk about
 [react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
 
