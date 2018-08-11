@@ -7,9 +7,9 @@ Github Worlds menu is a visualization toolkit that provides
 It is called Github Worlds **menu** because there is also a
 Github Worlds **drawer** which displays the same data and views
 but with the
-[Drawer](https://material-ui.com/demos/drawers/) being the
-primary navigation element instead of the
-[Menu](https://material-ui.com/demos/menus/)
+**[Drawer](https://material-ui.com/demos/drawers/)**
+being the primary navigation element instead of the
+**[Menu](https://material-ui.com/demos/menus/)**
 
 This demo is an extension of
 [mui-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu) and it is assumed that you have already reviewed the concepts and
