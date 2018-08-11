@@ -42,8 +42,6 @@ class DataViewWrapper extends React.Component {
 
     const url = `https://raw.githubusercontent.com/stormasm/mui-tutorial-demo/master/${this.props.view}/README.md`
 
-//    const url = `https://raw.githubusercontent.com/stormasm/${this.props.view}/master/README.md`;
-
     fetch(url)
       .then(response => {
         if (response.ok) {
