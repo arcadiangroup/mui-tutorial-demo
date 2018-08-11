@@ -20,7 +20,7 @@ class DataViewWrapper extends React.Component {
     this.setState({ isLoading: true });
     this.setState({ viewName: nextProps.view });
 
-    const url = `https://raw.githubusercontent.com/stormasm/${nextProps.view}/master/README.md`;
+    const url = `https://raw.githubusercontent.com/stormasm/mui-tutorial-demo/master/${nextProps.view}/README.md`
 
     fetch(url)
       .then(response => {
@@ -40,7 +40,9 @@ class DataViewWrapper extends React.Component {
     this.setState({ isLoading: true });
     this.setState({ viewName: this.props.view });
 
-    const url = `https://raw.githubusercontent.com/stormasm/${this.props.view}/master/README.md`;
+    const url = `https://raw.githubusercontent.com/stormasm/mui-tutorial-demo/master/${this.props.view}/README.md`
+
+//    const url = `https://raw.githubusercontent.com/stormasm/${this.props.view}/master/README.md`;
 
     fetch(url)
       .then(response => {
