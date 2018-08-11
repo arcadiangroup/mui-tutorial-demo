@@ -7,9 +7,9 @@ Each Menu Item is a link to the underlying **Readme** file.
 
 ## The List
 
-* [mui-md](https://github.com/stormasm/mui-md/blob/master/README.md)
-* [mui-drawer](https://github.com/stormasm/mui-drawer/blob/master/README.md)
-* [mui-menu](https://github.com/stormasm/mui-menu/blob/master/README.md)
-* [ghw-autosuggest](https://github.com/stormasm/ghw-autosuggest/blob/master/README.md)
-* [ghw-drawer](https://github.com/stormasm/ghw-drawer/blob/master/README.md)
-* [ghw-menu](https://github.com/stormasm/ghw-menu/blob/master/README.md)
+* [mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer)
+* [mui-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu)
+* [ghw-autosuggest](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-autosuggest)
+* [ghw-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-drawer)
+* [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu)
+* [mui-md](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-md)
