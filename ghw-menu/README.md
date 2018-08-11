@@ -15,8 +15,17 @@ This demo is an extension of
 [mui-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu) and it is assumed that you have already reviewed the concepts and
 documentation associated with that repo.
 
-This is where I will start writing about this repo...
-Tomorrow.  Get Excited !!
+### The Card Views
+
+There are four views present in the Github Worlds drawer and menu demo series. They include
+
+* Cards displayed in a Horizontal Line
+* Cards displayed six across in an infinite vertical column
+* Cards displayed as a function of
+[react-autosuggest](https://github.com/moroshko/react-autosuggest)
+in concert with
+[Material-UI Tables](https://material-ui.com/demos/tables/)
+* Cards displayed with no avatars
 
 #### Code Details
 
