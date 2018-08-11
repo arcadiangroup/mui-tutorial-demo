@@ -1,7 +1,19 @@
 
 ### ghw-drawer
 
-put in more stuff here, the remaining stuff will be at the end...
+Github Worlds drawer is a visualization toolkit that provides
+**Views** into JSON data that comes from the
+[Github GraphQL API](https://developer.github.com/v4/).
+It is called Github Worlds **drawer** because there is also a
+Github Worlds **menu** which displays the same data and views
+but with the
+**[Menu](https://material-ui.com/demos/menus/)**
+being the primary navigation element instead of the
+**[Drawer](https://material-ui.com/demos/drawers/)**
+
+This demo is an extension of
+[mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer) and it is assumed that you have already reviewed the concepts and
+documentation associated with that repo.
 
 ### The Details
 
