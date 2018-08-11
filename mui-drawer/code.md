@@ -1,5 +1,5 @@
 
-### ghw-drawer code details
+### mui-drawer code details
 
 For simplicity it might be easier to first review the code in
 [mui-drawer](https://github.com/stormasm/mui-drawer) as this
