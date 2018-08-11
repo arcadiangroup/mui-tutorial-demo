@@ -17,10 +17,10 @@ documentation associated with that repo.
 
 ### The Card Views
 
-There are four views present in the Github Worlds drawer and menu demo series. They include
+There are four views present in the Github Worlds drawer and menu demo series. They include in order of View appearance.
 
-* Cards displayed in a Horizontal Line
 * Cards displayed six across in an infinite vertical column
+* Cards displayed in a Horizontal Line
 * Cards displayed as a function of
 [react-autosuggest](https://github.com/moroshko/react-autosuggest)
 in concert with
