@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import ViewName from "./../components/ViewName";
 import MarkdownDocs from "./../modules/components/MarkdownDocs";
 
 const styles = theme => ({
   root: theme.mixins.gutters({
-    paddingTop: 20,
+    paddingTop: 1,
     flex: "1 1 100%",
     maxWidth: "100%",
     margin: "0 auto"
@@ -14,11 +13,10 @@ const styles = theme => ({
 });
 
 function View3(props) {
-  const { classes, viewName, markdown } = props;
+  const { classes, markdown } = props;
 
   return (
     <div>
-      <ViewName viewName={viewName} />
       <div className={classes.root}>
         <MarkdownDocs markdown={markdown} />
       </div>
