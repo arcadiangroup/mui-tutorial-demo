@@ -16,26 +16,6 @@ class DataViewWrapper extends React.Component {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({ isLoading: true });
-    this.setState({ viewName: nextProps.view });
-
-    const url = `https://raw.githubusercontent.com/stormasm/mui-tutorial-demo/master/${nextProps.view}/README.md`
-
-    fetch(url)
-      .then(response => {
-        if (response.ok) {
-          return response.text();
-        } else {
-          throw new Error(
-            "Sorry, something went wrong in the DataViewWrapper part I"
-          );
-        }
-      })
-      .then(data => this.setState({ data, isLoading: false }))
-      .catch(error => this.setState({ error, isLoading: false }));
-  }
-
   componentDidMount() {
     this.setState({ isLoading: true });
     this.setState({ viewName: this.props.view });
