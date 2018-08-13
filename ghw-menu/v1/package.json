@@ -2,7 +2,7 @@
   "name": "ghw-menu",
   "version": "0.9.1",
   "private": true,
-  "homepage": "https://stormasm.github.io/ghw-menu",
+  "homepage": "https://muitool.github.io/ghw-menu",
   "dependencies": {
     "@material-ui/core": "^1.5.0",
     "@material-ui/docs": "^1.0.0-alpha.4",
